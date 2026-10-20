@@ -1,9 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        int [] original = {5,3,4,1,2};
+        int [] original = {5,6,4,1,2,3};
         int [] b= original.clone();
         int [] c= original;
-    
     //Usar el metodo del archivo (clase) Bubble
     //Instanciar archivo Bubble
     //Voy a ijstanciar la clase bubble
@@ -12,6 +11,15 @@ public class App {
     printArreglo(b);
     bubble.sort(b);
     printArreglo(b);
+
+    //Instanciar selection
+    System.out.println("");
+    System.out.println("---Selection--");
+    Selection selection = new Selection();
+    printArreglo(c);
+    selection.sort(c);
+    printArreglo(c);
+
     }
 
     public static void printArreglo(int [] arr){
@@ -19,5 +27,4 @@ public class App {
             System.out.print(arr[i]+" - ");
         System.out.println();
     }
-
 }
