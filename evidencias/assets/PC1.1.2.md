@@ -2,11 +2,11 @@
 
 ## Codigo SELECTION
 
-![alt text](../imageP2.png)
+![alt text](image1P2.png)
 
 ## Consola SELECTION
 
-![alt text](../image2P2.png)
+![alt text](image2P2.png) 
 
 ## Explicacion codigo 
 

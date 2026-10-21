@@ -1,9 +1,10 @@
 # PC1.1.1
 ## Metodo Burbuja 
 
-![alt text](Imagne1.png)
+![alt text](ImageP1.png)
 
 
 ## Consola evidencia
 
-![alt text](Imangen2.png)
+![alt text](Image2P1.png)
+
