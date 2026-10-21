@@ -5,12 +5,13 @@ public class InsertionSort {
             int aux =arreglo[i];
             int j = i - 1;
             while (j >= 0 && arreglo[j] < aux) {
-                System.out.println("El aux= "+ aux +" se inserta en pos "+ i);
+                //System.out.println("El aux= "+ aux +" se inserta en pos "+ (j+1));
                 arreglo[j + 1] = arreglo[j];
-
                 j--;
             }
             arreglo[j + 1] = aux;
+            if ( j+1 < i)
+                System.out.println("El aux= "+ aux +" se inserta en pos "+ (j+1));
         }
         System.out.println("Ordenado Des: " );
     }
