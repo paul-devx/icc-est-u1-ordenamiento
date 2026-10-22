@@ -30,7 +30,25 @@ public class Bubble {
         System.out.println("Comparaciones: " + comparaciones);
     }
 
-    public void sortEstudiantes(Estudiante[] estudiantes){
+    public void sortEstudiantesNota(Estudiante[] estudiantes){
+        for (int i=0; i<estudiantes.length; i++){
+            boolean cambio = false;
+            for (int j=0; j<estudiantes.length-i-1; j++){
+                if (estudiantes[j].getName().compareTo(estudiantes[j+1].getName()) > 0){
+                    Estudiante aux = estudiantes[j];
+                    estudiantes[j] = estudiantes[j+1];
+                    estudiantes[j+1] = aux;
+                    cambio = true;
+                }
+                
+            }
+            if (!cambio){
+                break;
+            }
+        }
+    }
+
+    public void sortEstudiantesName(Estudiante[] estudiantes){
         for (int i=0; i<estudiantes.length; i++){
             boolean cambio = false;
             for (int j=0; j<estudiantes.length-i-1; j++){
@@ -38,10 +56,14 @@ public class Bubble {
                     Estudiante aux = estudiantes[j];
                     estudiantes[j] = estudiantes[j+1];
                     estudiantes[j+1] = aux;
-                    cambio= true;
+                    cambio = true;
                 }
             }
+            if (!cambio){
+                break;
+            }
         }
-
     }
+
+    
 }

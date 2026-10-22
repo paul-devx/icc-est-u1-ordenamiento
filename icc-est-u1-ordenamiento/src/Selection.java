@@ -24,5 +24,3 @@ public class Selection {
         System.out.println("Ordenado Asc: ");
     }
 }
-
-
