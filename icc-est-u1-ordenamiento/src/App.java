@@ -49,7 +49,7 @@ public class App {
 
 
     public static void runEjemplosPrimitivos() {
-        int [] original = {5,6,4,1,2,3};
+        int [] original = {5, 6, 4, 1, 2, 3};
         int [] b= original.clone();
         int [] c= original;
         int [] nums = {5,6,4,1,2,3};
@@ -92,7 +92,10 @@ public class App {
     public static void printArregloEstudiantes(Estudiante[] estudiantes, String title) {
         System.out.println(title);
         for (Estudiante e : estudiantes) {
-            System.out.println(e);
+            System.out.print(e+ " " );
+            //System.out.println();
         }
+        System.out.println();
+        System.out.println("-----------------------------");
     }
 }
